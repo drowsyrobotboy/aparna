@@ -1,5 +1,8 @@
+html, body{
+  min-height: 100%
+}
 body{
-  background: #852D1F url('../images/bg.jpg') no-repeat fixed;
+  background: #852D1F url('../images/bg.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 .d1, .d2, .d3, .d4{
