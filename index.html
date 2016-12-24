@@ -32,12 +32,42 @@
       <div class="d2"><img src="images/d2.png"></div>
       <div class="d4"><img src="images/d4.png"></div>
     </div>
-    <div class="heading">
-      <img src="images/event.svg">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="heading">
+          <img src="images/event.svg">
+        </div>
+      </div>
     </div>
     <div class="event-cont row">
-      <div class="col-sm-6">Reception</div>
-      <div class="col-sm-6">Wedding</div>
+      <div class="col-sm-6 event-item">
+        <h2>Reception</h2>
+        <p>
+          <span style="font-size: 1.4em">Wednesday, 1<sup>st</sup> February, 2017<br></span>
+          starting 07:30 pm, followed by Dinner
+        </p>
+      </div>
+      <div class="col-sm-6 event-item">
+        <h2>Wedding</h2>
+        <p>
+          <span style="font-size: 1.4em">Thursday, 2<sup>nd</sup> February, 2017<br></span>
+          at 01:05 am (Early hours)
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="heading">
+          <img src="images/venue.svg">
+        </div>
+      </div>
+    </div>
+    <div class="event-cont row">
+      <div class="col-sm-12 event-item">
+        <p>
+          Pochampally Balwanth Reddy Gardens, Nagole - Bandlaguda Road, Nagole, Hyderabad
+        </p>
+      </div>
     </div>
   </div>
   <div class="three" id="map">
@@ -46,7 +76,7 @@
       <div class="d4"><img src="images/d4.png"></div>
     </div>
     <div class="heading">
-      <img src="images/venue.svg">
+      <img src="images/directions.svg">
     </div>
     <div class="map">
       <div id="map-container"></div>
@@ -61,9 +91,9 @@
           zoom: 18,
           center: pbr,
           styles: [
-            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
-            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
-            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {elementType: 'geometry', stylers: [{color: '#7D261D'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#7D261D'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#D89333'}]},
             {
               featureType: 'administrative.locality',
               elementType: 'labels.text.fill',
@@ -77,17 +107,17 @@
             {
               featureType: 'poi.park',
               elementType: 'geometry',
-              stylers: [{color: '#263c3f'}]
+              stylers: [{color: '#682514'}]
             },
             {
               featureType: 'poi.park',
               elementType: 'labels.text.fill',
-              stylers: [{color: '#6b9a76'}]
+              stylers: [{color: '#D89333'}]
             },
             {
               featureType: 'road',
               elementType: 'geometry',
-              stylers: [{color: '#38414e'}]
+              stylers: [{color: '#D89333'}]
             },
             {
               featureType: 'road',
@@ -97,12 +127,17 @@
             {
               featureType: 'road',
               elementType: 'labels.text.fill',
-              stylers: [{color: '#9ca5b3'}]
+              stylers: [{color: '#7D261D'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#D89333'}]
             },
             {
               featureType: 'road.highway',
               elementType: 'geometry',
-              stylers: [{color: '#746855'}]
+              stylers: [{color: '#D89333'}]
             },
             {
               featureType: 'road.highway',
@@ -115,29 +150,34 @@
               stylers: [{color: '#f3d19c'}]
             },
             {
+              featureType: 'road.highway',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#7D261D'}]
+            },
+            {
               featureType: 'transit',
               elementType: 'geometry',
-              stylers: [{color: '#2f3948'}]
+              stylers: [{color: '#682514'}]
             },
             {
               featureType: 'transit.station',
               elementType: 'labels.text.fill',
-              stylers: [{color: '#d59563'}]
+              stylers: [{color: '#D89333'}]
             },
             {
               featureType: 'water',
               elementType: 'geometry',
-              stylers: [{color: '#17263c'}]
+              stylers: [{color: '#9A4A22'}]
             },
             {
               featureType: 'water',
               elementType: 'labels.text.fill',
-              stylers: [{color: '#515c6d'}]
+              stylers: [{color: '#D89333'}]
             },
             {
               featureType: 'water',
               elementType: 'labels.text.stroke',
-              stylers: [{color: '#17263c'}]
+              stylers: [{color: '#9A4A22'}]
             }
           ]
         });
