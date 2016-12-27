@@ -1,3 +1,5 @@
 $(window).on('load', function(){
-  //window.location="#home";
+  $('#intro').css({"width": "100%", "height":"100vh"});
+  $('#intro').removeClass('introAn');
+  $('.intro-overlay').fadeOut("slow");
 });
